@@ -1,0 +1,44 @@
+* {
+  padding:0;
+  margin:0;
+  font-family: sans-serif;
+  color:black;
+  font-size: 15px;
+}
+
+body {
+  background-color: #c9a9d5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #c9a9d5;
+  border-bottom: 1px #b3b1b1 solid;
+}
+
+.flex-item {
+  width: 60%;
+  padding: 50px;
+  margin: 50px 0 0 0;
+  background-color: #fcb900;
+  text-align: center;
+  line-height: center;
+
+}
+
+.flex-item h1, .flex-item a {
+  color:white;
+  font-size: 35px;
+}
+
+.clickable {
+  cursor: pointer;
+}
