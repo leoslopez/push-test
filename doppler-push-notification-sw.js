@@ -8,6 +8,8 @@ self.addEventListener('push', e => {
         data.title,
         {
             body: data.body,
+            image: 'https://png.pngtree.com/element_origin_min_pic/16/08/05/1057a3fae73b91b.jpg',
+            icon: 'https://images.vexels.com/media/users/3/144131/isolated/preview/29576a7e0442960346703d3ecd6bac04-picture-doodle-icon.png',
             data: data.data && data.data.messageId,
         }
     );
