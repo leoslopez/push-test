@@ -6,11 +6,13 @@ self.addEventListener('push', e => {
     console.log('Notification Received');
     self.registration.showNotification(data.title, {
         body: data.message,
-        data: data.data.messageId,
+        data: data.data && data.data.messageId,
     });
 
     // TODO: it could invoke the API to inform messageId reception by the browser
-    console.log(`pushing messageId: ${data.data.messageId}`);
+    if (data.data?.messageId) {
+        console.log(`pushing messageId: ${data.data.messageId}`);
+    }
 });
 
 self.addEventListener('notificationclick', (event) => {
