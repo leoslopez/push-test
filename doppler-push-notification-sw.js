@@ -4,10 +4,13 @@ self.addEventListener('push', e => {
     const data = e.data.json();
     console.log(data)
     console.log('Notification Received');
-    self.registration.showNotification(data.title, {
-        body: data.body,
-        data: data.data && data.data.messageId,
-    });
+    self.registration.showNotification(
+        data.title,
+        {
+            body: data.body,
+            data: data.data && data.data.messageId,
+        }
+    );
 
     // TODO: it could invoke the API to inform messageId reception by the browser
     if (data.data?.messageId) {
