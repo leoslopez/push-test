@@ -5,7 +5,7 @@ self.addEventListener('push', e => {
     console.log(data)
     console.log('Notification Received');
     self.registration.showNotification(data.title, {
-        body: data.message,
+        body: data.body,
         data: data.data && data.data.messageId,
     });
 
