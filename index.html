@@ -1,18 +1,83 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Probar Push con Doppler</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="icon" href="assets/img/favicon.ico">
-  <script type="text/javascript" async="async" src="https://hub.fromdoppler.com/public/dhtrack.js"></script>
+  <script type="text/javascript" async src="https://hubint.fromdoppler.com/public/dhtrack.js"></script>
+  <style>
+    /* Estilos del modal */
+    #push-modal {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 400px;
+      background: white;
+      padding: 15px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      display: none;
+      z-index: 1000;
+    }
+    #push-modal button {
+      margin: 10px;
+      padding: 8px 12px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #btn-yes {
+      background-color: #007bff;
+      color: white;
+    }
+    #btn-no {
+      background-color: #ccc;
+    }
+  </style>
 </head>
-<body data-new-gr-c-s-check-loaded="14.1157.0" data-gr-ext-installed="">
+<body>
+  <div id="push-modal">
+    <p>Nos gustaría que estés al tanto de las novedades</p>
+    <button id="btn-yes">Sí</button>
+    <button id="btn-no">No</button>
+  </div>
+
   <article class="flex-container">
     <section class="flex-item">
       <h1>**Suscribite al PUSH**</h1>
     </section>
   </article>
-  <div style="text-align:center;"><a href="/tabs/tab1.html">Proba el comportamiento en sitio: ir al Tab1</a></div>
+  <div style="text-align:center;">
+    <a href="/tabs/tab1.html">Proba el comportamiento en sitio: ir al Tab1</a>
+  </div>
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const modal = document.getElementById("push-modal");
+      const btnYes = document.getElementById("btn-yes");
+      const btnNo = document.getElementById("btn-no");
+
+      // Mostrar el modal al cargar la página
+      setTimeout(() => {
+        modal.style.display = "block";
+      }, 1000); // Se muestra 1 seg después de cargar la página
+
+      // Acción al hacer clic en "Sí"
+      btnYes.addEventListener("click", function() {
+        window.open("https://leotest_dplrpush.leoslopez.site", "pushWindow", "width=400,height=300");
+        modal.style.display = "none"; // Ocultar modal
+      });
+
+      // Acción al hacer clic en "No"
+      btnNo.addEventListener("click", function() {
+        modal.style.display = "none"; // Ocultar modal
+      });
+    });
+  </script>
+</body>
+</html>
