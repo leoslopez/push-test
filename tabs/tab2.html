@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permitir Push</title>
+  <style>
+    /* Contenedor del mensaje */
+    #push-hint {
+      position: fixed;
+      top: 50px; /* Ajustado más abajo */
+      left: 15px;
+      background: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 1000;
+    }
+
+    /* Flecha apuntando hacia arriba */
+    #push-hint::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #007bff;
+    }
+
+    /* Botón de cerrar */
+    #close-hint {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="push-hint">
+    <span>Click si quieres permitir push</span>
+    <button id="close-hint">✖</button>
+  </div>
+
+  <script>
+    document.getElementById("close-hint").addEventListener("click", function() {
+      document.getElementById("push-hint").style.display = "none";
+    });
+  </script>
+
+</body>
+</html>
