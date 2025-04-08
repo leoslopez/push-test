@@ -62,14 +62,24 @@
       const btnYes = document.getElementById("btn-yes");
       const btnNo = document.getElementById("btn-no");
 
-      // Mostrar el modal al cargar la página
-      setTimeout(() => {
-        modal.style.display = "block";
-      }, 1000); // Se muestra 1 seg después de cargar la página
+      // descomentar si se quiere simular el manejo del push modal aca
+      // const wasProcessed = localStorage.getItem("push_modal_was_processed");
+      // if (wasProcessed !== "true") {
+      //   setTimeout(() => {
+      //     modal.style.display = "block";
+      //   }, 1000); // Se muestra 1 seg después de cargar la página
+      // }
+
+      const originalDomain = window.location.host;
+      const guid = localStorage.getItem("_dha__uuid");
 
       // Acción al hacer clic en "Sí"
       btnYes.addEventListener("click", function() {
-        window.open("https://push.leoslopez.site", "pushWindow", "width=400,height=300");
+        window.open(
+          `https://push.leoslopez.site?ori_domain=${originalDomain}&dha_id=${guid}`,
+          "pushWindow",
+          "width=400,height=300",
+        );
         modal.style.display = "none"; // Ocultar modal
       });
 
