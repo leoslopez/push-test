@@ -1,5 +1,4 @@
-// URL con versionado opcional para forzar actualizaciones si cambió el SW remoto
-const remoteSWUrl = 'https://hubint.fromdoppler.com/public/sw-remote.js?v=1';
+const remoteSWUrl = 'https://hubint.fromdoppler.com/public/sw-remote.js';
 
 try {
   importScripts(remoteSWUrl);
