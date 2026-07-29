@@ -261,6 +261,40 @@ a {
   margin-top: 10px;
 }
 
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2 {
+  font-size: 20px;
+  color: #2f2147;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.info-card ul {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.info-card li + li {
+  margin-top: 8px;
+}
+
 @media (max-width: 640px) {
   .topbar {
     padding: 12px 12px 0;
@@ -300,5 +334,17 @@ a {
 
   .faq-answer {
     padding: 0 16px 16px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    padding: 16px;
+  }
+
+  .info-card h2 {
+    font-size: 18px;
   }
 }
