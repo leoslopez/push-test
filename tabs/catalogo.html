@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Probar Push con Doppler - Catálogo</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="icon" href="../assets/img/favicon.ico">
+  <script type="text/javascript" async src="https://hubint.fromdoppler.com/public/dhtrack.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="main-link" style="text-align:left; margin-left:0;">
+      <a href="../index.html">Volver al inicio</a>
+    </div>
+
+    <section class="catalog-hero">
+      <h1>Catálogo de kiosco</h1>
+      <p>
+        Lista de productos inventados para pruebas del sitio. La idea es tener un catálogo simple,
+        claro y navegable desde el submenu de la página principal.
+      </p>
+    </section>
+
+    <section class="catalog-card" aria-label="Tabla de productos de kiosco">
+      <table class="catalog-table">
+        <thead>
+          <tr>
+            <th class="catalog-index">#</th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th class="catalog-price">Valor</th>
+          </tr>
+        </thead>
+        <tbody id="catalog-body"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script>
+    const products = [
+      { name: "Chicle Turbo Frutal", category: "Golosinas", value: 250 },
+      { name: "Alfajor Luna de Vainilla", category: "Golosinas", value: 950 },
+      { name: "Papas Croc Kiosco", category: "Snacks", value: 1200 },
+      { name: "Bastones de Chocolate Nube", category: "Golosinas", value: 780 },
+      { name: "Gaseosa Fresca 500ml", category: "Bebidas", value: 1100 },
+      { name: "Agua Saborizada Cítrica", category: "Bebidas", value: 980 },
+      { name: "Maní Salado Crunch", category: "Snacks", value: 650 },
+      { name: "Turrón Miel Dorada", category: "Golosinas", value: 420 },
+      { name: "Barrita Cereal Marea", category: "Saludables", value: 720 },
+      { name: "Caramelos Ácidos Neon", category: "Golosinas", value: 300 },
+      { name: "Sándwich de Miga Clásico", category: "Panificados", value: 1800 },
+      { name: "Chocolate con Maní Pico Dulce", category: "Golosinas", value: 1300 },
+      { name: "Jugo Tropical 200ml", category: "Bebidas", value: 900 },
+      { name: "Pochoclo Manteca Express", category: "Snacks", value: 700 },
+      { name: "Heladito Frutos del Norte", category: "Helados", value: 1500 },
+      { name: "Galletitas Sésamo Box", category: "Panificados", value: 850 },
+      { name: "Mini Tarta de Coco", category: "Panificados", value: 1250 },
+      { name: "Yogur Bebible Frutilla", category: "Bebidas", value: 1050 },
+      { name: "Menta Fresh Pocket", category: "Golosinas", value: 320 },
+      { name: "Nachos Salados Fiesta", category: "Snacks", value: 1400 },
+      { name: "Bebida Isotónica Polar", category: "Bebidas", value: 1600 },
+      { name: "Alfajor Doble Nuez", category: "Golosinas", value: 1400 },
+      { name: "Corte Helado de Vainilla", category: "Helados", value: 1700 },
+      { name: "Palitos de Queso Deluxe", category: "Salados", value: 1250 },
+      { name: "Gomitas Selva Mix", category: "Golosinas", value: 500 },
+      { name: "Tostaditas Rústicas", category: "Panificados", value: 890 },
+      { name: "Soda Limón Spark", category: "Bebidas", value: 950 },
+      { name: "Rulos de Maíz Picante", category: "Snacks", value: 1150 },
+      { name: "Barra de Cacao Intenso", category: "Golosinas", value: 990 },
+      { name: "Croissant Dulce Mini", category: "Panificados", value: 1100 },
+      { name: "Papas Rizadas BBQ", category: "Snacks", value: 1350 },
+      { name: "Café Listo Vainilla", category: "Bebidas", value: 1500 },
+      { name: "Bombones Rellenos Aurora", category: "Golosinas", value: 2100 },
+      { name: "Helado Frutilla Split", category: "Helados", value: 1450 },
+      { name: "Pretzels Salados", category: "Salados", value: 1000 },
+      { name: "Cookies de Avena", category: "Panificados", value: 970 },
+      { name: "Chips de Batata", category: "Snacks", value: 1300 },
+      { name: "Agua Mineral 600ml", category: "Bebidas", value: 800 },
+      { name: "Lágrimas de Coco", category: "Golosinas", value: 560 },
+      { name: "Tostado de Jamón y Queso", category: "Panificados", value: 2200 },
+      { name: "Granizado de Lima", category: "Helados", value: 1750 },
+      { name: "Palitos de Sésamo", category: "Salados", value: 930 },
+      { name: "Caramelo Toffee Twist", category: "Golosinas", value: 280 },
+      { name: "Barrita Proteica Kiosko Fit", category: "Saludables", value: 1250 },
+      { name: "Gaseosa Cola Retro", category: "Bebidas", value: 1150 },
+      { name: "Sandwich Grill Vegetal", category: "Panificados", value: 2100 },
+      { name: "Chocolate Blanco Nube", category: "Golosinas", value: 1450 },
+      { name: "Mix de Frutos Secos", category: "Saludables", value: 1900 },
+      { name: "Pochoclo Caramelo", category: "Snacks", value: 850 },
+      { name: "Heladito de Dulce de Leche", category: "Helados", value: 1600 },
+    ];
+
+    const catalogBody = document.getElementById("catalog-body");
+
+    catalogBody.innerHTML = products.map((product, index) => `
+      <tr>
+        <td class="catalog-index">${index + 1}</td>
+        <td>${product.name}</td>
+        <td>${product.category}</td>
+        <td class="catalog-price">$${product.value.toLocaleString("es-AR")}</td>
+      </tr>
+    `).join("");
+  </script>
+</body>
+</html>

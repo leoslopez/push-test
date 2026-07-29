@@ -48,6 +48,29 @@
   </style>
 </head>
 <body>
+  <header class="topbar">
+    <div class="topbar-spacer"></div>
+    <div class="menu-wrapper">
+      <button
+        id="tabs-menu-button"
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menú de tabs"
+        aria-expanded="false"
+        aria-controls="tabs-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="tabs-menu" class="tabs-menu" aria-label="Tabs del sitio">
+        <a href="/tabs/tab1.html">- Tab 1: probar comportamiento en sitio</a>
+        <a href="/tabs/tab2.html">- Tab 2</a>
+        <a href="/tabs/catalogo.html">- Catálogo de kiosco</a>
+      </nav>
+    </div>
+  </header>
+
   <div id="push-modal">
     <p>Nos gustaría que estés al tanto de las novedades</p>
     <button id="btn-yes">Sí</button>
@@ -59,7 +82,7 @@
       <h1>**Suscribite al PUSH**</h1>
     </section>
   </article>
-  <div style="text-align:center;">
+  <div class="main-link" style="text-align:center;">
     <a href="/tabs/tab1.html">Proba el comportamiento en sitio: ir al Tab1</a>
   </div>
 
@@ -72,6 +95,18 @@
       const modal = document.getElementById("push-modal");
       const btnYes = document.getElementById("btn-yes");
       const btnNo = document.getElementById("btn-no");
+      const menuButton = document.getElementById("tabs-menu-button");
+      const tabsMenu = document.getElementById("tabs-menu");
+
+      const closeMenu = () => {
+        tabsMenu.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+      };
+
+      const toggleMenu = () => {
+        const isOpen = tabsMenu.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+      };
 
       // descomentar si se quiere simular el manejo del push modal aca
       // const wasProcessed = localStorage.getItem("push_modal_was_processed");
@@ -97,6 +132,25 @@
       // Acción al hacer clic en "No"
       btnNo.addEventListener("click", function() {
         modal.style.display = "none"; // Ocultar modal
+      });
+
+      menuButton.addEventListener("click", function(event) {
+        event.stopPropagation();
+        toggleMenu();
+      });
+
+      tabsMenu.addEventListener("click", function(event) {
+        event.stopPropagation();
+      });
+
+      document.addEventListener("click", function() {
+        closeMenu();
+      });
+
+      document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+          closeMenu();
+        }
       });
     });
   </script>
