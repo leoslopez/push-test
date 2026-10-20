@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Eco IA test site</title>
+  <desc id="desc">Ilustración de una campaña de email generada para pruebas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#e9fff3"/><stop offset="1" stop-color="#c5f0da"/></linearGradient>
+    <linearGradient id="card" x1="0" x2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5fffa"/></linearGradient>
+  </defs>
+  <rect width="1200" height="520" rx="32" fill="url(#bg)"/>
+  <circle cx="1040" cy="90" r="130" fill="#33ad73" opacity=".16"/>
+  <circle cx="110" cy="450" r="190" fill="#33ad73" opacity=".12"/>
+  <rect x="120" y="78" width="650" height="365" rx="22" fill="url(#card)" stroke="#b7e6ca" stroke-width="4"/>
+  <rect x="120" y="78" width="650" height="64" rx="22" fill="#33ad73"/>
+  <circle cx="160" cy="110" r="10" fill="#fff" opacity=".9"/><circle cx="194" cy="110" r="10" fill="#fff" opacity=".65"/><circle cx="228" cy="110" r="10" fill="#fff" opacity=".4"/>
+  <rect x="190" y="180" width="300" height="24" rx="12" fill="#1d7f54" opacity=".9"/>
+  <rect x="190" y="226" width="470" height="14" rx="7" fill="#a6d9ba"/><rect x="190" y="252" width="400" height="14" rx="7" fill="#c5e9d2"/>
+  <rect x="190" y="306" width="200" height="54" rx="27" fill="#33ad73"/>
+  <text x="290" y="341" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">Probar campaña</text>
+  <rect x="850" y="180" width="190" height="190" rx="36" fill="#33ad73"/>
+  <path d="M908 295c18-4 34-16 46-36 10 16 24 28 45 34-4 27-19 44-45 52-26-8-42-25-46-50Z" fill="#fff"/>
+  <path d="M960 258c10-24 29-39 56-46-2 25-11 45-31 60-9-3-17-8-25-14Z" fill="#d8ffe7"/>
+  <text x="945" y="416" text-anchor="middle" fill="#1d7f54" font-family="Arial, sans-serif" font-size="28" font-weight="700">Eco IA</text>
+</svg>

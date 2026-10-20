@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Eco IA</title>
+  <desc id="desc">Logo de prueba para Eco IA</desc>
+  <rect width="256" height="256" rx="56" fill="#33ad73"/>
+  <circle cx="128" cy="128" r="74" fill="#fff" opacity=".96"/>
+  <path d="M81 139c15-3 29-13 39-30 8 13 20 23 37 28-3 22-15 36-37 42-22-6-35-19-39-40Z" fill="#33ad73"/>
+  <path d="M125 108c8-19 23-31 45-37-1 20-9 36-25 48-7-3-13-7-20-11Z" fill="#1d7f54"/>
+  <circle cx="105" cy="116" r="6" fill="#1d7f54"/>
+</svg>
