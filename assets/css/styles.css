@@ -212,6 +212,29 @@ a {
   font-weight: 700;
 }
 
+.product-page {
+  max-width: 520px;
+  margin: 22px auto 0;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.product-image {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+}
+
+.product-page h1 {
+  font-size: 28px;
+  color: #2f2147;
+}
+
 .faq-list {
   display: grid;
   gap: 14px;
@@ -353,6 +376,15 @@ a {
 
   .catalog-hero h1 {
     font-size: 30px;
+  }
+
+  .product-page {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .product-page h1 {
+    font-size: 24px;
   }
 
   .faq-item summary {
