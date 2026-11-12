@@ -1,9 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">Eco IA</title>
-  <desc id="desc">Logo de prueba para Eco IA</desc>
-  <rect width="256" height="256" rx="56" fill="#33ad73"/>
-  <circle cx="128" cy="128" r="74" fill="#fff" opacity=".96"/>
-  <path d="M81 139c15-3 29-13 39-30 8 13 20 23 37 28-3 22-15 36-37 42-22-6-35-19-39-40Z" fill="#33ad73"/>
-  <path d="M125 108c8-19 23-31 45-37-1 20-9 36-25 48-7-3-13-7-20-11Z" fill="#1d7f54"/>
-  <circle cx="105" cy="116" r="6" fill="#1d7f54"/>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Kiosco LEOS</title>
+  <desc id="desc">Un kiosco blanco con un cartel que dice LEOS y toldo amarillo y violeta sobre un fondo violeta oscuro.</desc>
+  <rect width="256" height="256" rx="56" fill="#49265e"/>
+  <rect x="52" y="98" width="152" height="110" rx="12" fill="#fff8eb"/>
+  <rect x="72" y="54" width="112" height="40" rx="10" fill="#fcb900"/>
+  <path d="M88 65v18h12m22-18h-12v18h12m-12-9h10m17-9h2a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5v-8a5 5 0 0 1 5-5Zm29 0h-8a4 4 0 0 0-4 4v1a4 4 0 0 0 4 4h4a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4h-8" fill="none" stroke="#49265e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m52 96-12 32h176l-12-32Z" fill="#fcb900"/>
+  <path d="m84 96-6 32h34l2-32Zm60 0 2 32h32l-6-32Z" fill="#fff8eb"/>
+  <path d="M40 128h36v7a18 18 0 0 1-36 0Zm72 0h32v7a16 16 0 0 1-32 0Zm66 0h38v7a19 19 0 0 1-38 0Z" fill="#fcb900"/>
+  <path d="M76 128h36v7a18 18 0 0 1-36 0Zm68 0h34v7a17 17 0 0 1-34 0Z" fill="#fff8eb"/>
+  <rect x="70" y="158" width="62" height="34" rx="5" fill="#c9a9d5"/>
+  <path d="M84 180v-10m16 10v-7m16 7v-12" stroke="#49265e" stroke-width="7" stroke-linecap="round"/>
+  <rect x="148" y="158" width="36" height="50" rx="5" fill="#49265e"/>
+  <circle cx="175" cy="184" r="3" fill="#fcb900"/>
+  <path d="M48 208h160" stroke="#fcb900" stroke-width="8" stroke-linecap="round"/>
 </svg>

@@ -1,22 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-  <title id="title">Eco IA test site</title>
-  <desc id="desc">Ilustración de una campaña de email generada para pruebas.</desc>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Tu kiosco, a la vuelta</title>
+  <desc id="desc">Un kiosco de barrio con toldo a rayas, estantes de golosinas y una heladera de bebidas. Alfajores, caramelos y algo fresco para cada día.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#e9fff3"/><stop offset="1" stop-color="#c5f0da"/></linearGradient>
-    <linearGradient id="card" x1="0" x2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5fffa"/></linearGradient>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#fff8eb"/><stop offset="1" stop-color="#f0e3f5"/></linearGradient>
+    <pattern id="tiles" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0v28" fill="none" stroke="#e8d6ee" stroke-width="2"/></pattern>
   </defs>
   <rect width="1200" height="520" rx="32" fill="url(#bg)"/>
-  <circle cx="1040" cy="90" r="130" fill="#33ad73" opacity=".16"/>
-  <circle cx="110" cy="450" r="190" fill="#33ad73" opacity=".12"/>
-  <rect x="120" y="78" width="650" height="365" rx="22" fill="url(#card)" stroke="#b7e6ca" stroke-width="4"/>
-  <rect x="120" y="78" width="650" height="64" rx="22" fill="#33ad73"/>
-  <circle cx="160" cy="110" r="10" fill="#fff" opacity=".9"/><circle cx="194" cy="110" r="10" fill="#fff" opacity=".65"/><circle cx="228" cy="110" r="10" fill="#fff" opacity=".4"/>
-  <rect x="190" y="180" width="300" height="24" rx="12" fill="#1d7f54" opacity=".9"/>
-  <rect x="190" y="226" width="470" height="14" rx="7" fill="#a6d9ba"/><rect x="190" y="252" width="400" height="14" rx="7" fill="#c5e9d2"/>
-  <rect x="190" y="306" width="200" height="54" rx="27" fill="#33ad73"/>
-  <text x="290" y="341" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">Probar campaña</text>
-  <rect x="850" y="180" width="190" height="190" rx="36" fill="#33ad73"/>
-  <path d="M908 295c18-4 34-16 46-36 10 16 24 28 45 34-4 27-19 44-45 52-26-8-42-25-46-50Z" fill="#fff"/>
-  <path d="M960 258c10-24 29-39 56-46-2 25-11 45-31 60-9-3-17-8-25-14Z" fill="#d8ffe7"/>
-  <text x="945" y="416" text-anchor="middle" fill="#1d7f54" font-family="Arial, sans-serif" font-size="28" font-weight="700">Eco IA</text>
+  <circle cx="956" cy="231" r="214" fill="#e5d0ed"/>
+  <circle cx="1110" cy="75" r="28" fill="#fcb900" opacity=".45"/>
+  <path d="M563 83v22m-11-11h22M1130 321v22m-11-11h22" stroke="#9b72af" stroke-width="4" stroke-linecap="round"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#49265e">
+    <rect x="66" y="76" width="200" height="34" rx="17" fill="#ead9f0"/>
+    <text x="166" y="99" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="2">KIOSCO DE BARRIO</text>
+    <text x="64" y="194" font-size="66" font-weight="800" letter-spacing="-2">Tu kiosco,</text>
+    <text x="64" y="269" font-size="66" font-weight="800" letter-spacing="-2">a la vuelta.</text>
+    <path d="M67 291c87-9 203-9 294-1" fill="none" stroke="#fcb900" stroke-width="9" stroke-linecap="round"/>
+    <text x="68" y="337" font-size="22">Golosinas, alfajores y algo fresco.</text>
+    <text x="68" y="369" font-size="22">Un antojo para cada día.</text>
+    <g font-size="14" font-weight="700" text-anchor="middle">
+      <rect x="68" y="410" width="112" height="36" rx="18" fill="#fcb900"/><text x="124" y="433">GOLOSINAS</text>
+      <rect x="190" y="410" width="100" height="36" rx="18" fill="#e5d0ed"/><text x="240" y="433">BEBIDAS</text>
+      <rect x="300" y="410" width="100" height="36" rx="18" fill="#e5d0ed"/><text x="350" y="433">SNACKS</text>
+    </g>
+  </g>
+  <ellipse cx="865" cy="458" rx="247" ry="17" fill="#49265e" opacity=".12"/>
+  <rect x="664" y="174" width="386" height="272" rx="16" fill="#fff8eb" stroke="#49265e" stroke-width="5"/>
+  <path d="M668 300h378v141H668Z" fill="url(#tiles)"/>
+  <rect x="739" y="77" width="236" height="65" rx="16" fill="#49265e"/>
+  <text x="857" y="121" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" letter-spacing="5" fill="#fff8eb">KIOSCO</text>
+  <path d="M768 142v17m178-17v17" stroke="#49265e" stroke-width="6"/>
+  <path d="m665 157-25 60h434l-25-60Z" fill="#fcb900" stroke="#49265e" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m719 160-17 56h62l10-56Zm111 0-4 56h62l-4-56Zm110 0 11 56h62l-17-56Z" fill="#fff8eb"/>
+  <path d="M640 217h62v9a31 31 0 0 1-62 0Zm124 0h62v9a31 31 0 0 1-62 0Zm124 0h63v9a31.5 31.5 0 0 1-63 0Zm125 0h61v9a30.5 30.5 0 0 1-61 0Z" fill="#fcb900"/>
+  <path d="M702 217h62v9a31 31 0 0 1-62 0Zm124 0h62v9a31 31 0 0 1-62 0Zm125 0h62v9a31 31 0 0 1-62 0Z" fill="#fff8eb"/>
+  <path d="M640 218v8a31 31 0 0 0 62 0 31 31 0 0 0 62 0 31 31 0 0 0 62 0 31 31 0 0 0 62 0 31.5 31.5 0 0 0 63 0 31 31 0 0 0 62 0 30.5 30.5 0 0 0 61 0v-8" fill="none" stroke="#49265e" stroke-width="4"/>
+  <rect x="691" y="278" width="208" height="117" rx="8" fill="#49265e"/>
+  <g stroke="#fff8eb" stroke-width="3">
+    <rect x="708" y="298" width="25" height="30" rx="4" fill="#fcb900" transform="rotate(-8 720 313)"/>
+    <rect x="748" y="294" width="26" height="34" rx="4" fill="#c9a9d5"/>
+    <rect x="790" y="300" width="26" height="28" rx="4" fill="#f28f79" transform="rotate(8 803 314)"/>
+    <rect x="834" y="294" width="42" height="34" rx="7" fill="#fcb900"/>
+    <rect x="709" y="354" width="45" height="21" rx="8" fill="#f28f79"/>
+    <rect x="767" y="352" width="46" height="23" rx="8" fill="#fcb900"/>
+    <rect x="830" y="349" width="45" height="26" rx="8" fill="#c9a9d5"/>
+  </g>
+  <path d="M699 338h192m-192 47h192" stroke="#fff8eb" stroke-width="5"/>
+  <rect x="916" y="276" width="108" height="170" rx="9" fill="#c9a9d5" stroke="#49265e" stroke-width="5"/>
+  <rect x="929" y="292" width="81" height="132" rx="5" fill="#e8f1ef"/>
+  <g fill="#72b7a0" stroke="#49265e" stroke-width="2">
+    <path d="M940 323v-12h9v12l4 7v25h-17v-25Z"/>
+    <path d="M970 323v-12h9v12l4 7v25h-17v-25Z"/>
+  </g>
+  <path d="M931 363h77" stroke="#49265e" stroke-width="3"/>
+  <rect x="939" y="377" width="15" height="29" rx="4" fill="#fcb900"/>
+  <rect x="966" y="377" width="15" height="29" rx="4" fill="#f28f79"/>
+  <path d="M998 343v27" stroke="#49265e" stroke-width="4" stroke-linecap="round"/>
+  <rect x="685" y="397" width="220" height="13" rx="5" fill="#fcb900" stroke="#49265e" stroke-width="3"/>
+  <path d="M654 447h405" stroke="#49265e" stroke-width="7" stroke-linecap="round"/>
+  <g transform="translate(608 352) rotate(-12)">
+    <path d="m0 4 14 12L0 29Zm65 0L51 16l14 13Z" fill="#fcb900"/>
+    <rect x="12" y="1" width="42" height="31" rx="10" fill="#f28f79" stroke="#49265e" stroke-width="3"/>
+    <path d="M26 7v19m12-19v19" stroke="#fff8eb" stroke-width="4"/>
+  </g>
 </svg>
